@@ -1,16 +1,9 @@
-##  Resumen técnico
-
-Sistema de interfaz de usuario para un **árbol de habilidades (Skill Tree)** en **Unreal Engine 5**, implementado en **C++** y **Blueprints**.  
-Incluye gestión de **puntos de mejora**, **prerrequisitos entre habilidades**, y una **ventana de confirmación** antes de gastar puntos.  
-El widget principal (`USkillTree`) se crea desde el **Blueprint del personaje** al presionar la tecla **E**, mostrando el árbol completo y permitiendo desbloquear habilidades dinámicamente.
-
----
-
 ## Descripción general
 
-El sistema permite al jugador gestionar su progreso mediante un árbol de habilidades visual e interactivo.  
-Cada nodo del árbol representa una habilidad desbloqueable con puntos de mejora.  
-Las clases en C++ controlan la lógica de validación, consumo de puntos y confirmaciones, mientras que los Blueprints gestionan el aspecto visual y la interacción del jugador.
+Sistema de interfaz de usuario para un **árbol de habilidades (Skill Tree)** en **Unreal Engine 5**, implementado en **C++** y **Blueprints**.  
+El árbol está dividido en **tres bloques principales**: **Health**, **Skill** y **Strength**, cada uno con sus propias habilidades desbloqueables.  
+El jugador puede gastar puntos de mejora para activar nuevas habilidades, siempre que cumpla los requisitos necesarios.  
+El menú del árbol se abre desde el **Blueprint del personaje** al presionar la tecla **E**.
 
 ---
 
@@ -77,10 +70,4 @@ Ventana emergente que aparece al intentar desbloquear una habilidad.
 **Atributos:**
 - `ButtonConfirm` y `ButtonCancel`: botones que controlan la acción del usuario.  
 - `OnConfirm`: delegado que se enlaza dinámicamente desde `USkillButtons` cuando se abre la ventana.
-
----
-
-## Integración en el personaje
-
-Para mostrar el **Skill Tree** en el juego, se crea el widget desde el **Blueprint del personaje** al presionar la tecla **E**.
 
