@@ -1,9 +1,9 @@
 ## Descripción general
 
-Sistema de interfaz de usuario para un **árbol de habilidades (Skill Tree)** en **Unreal Engine 5**, implementado en **C++** y **Blueprints**.  
-El árbol está dividido en **tres bloques principales**: **Health**, **Skill** y **Strength**, cada uno con sus propias habilidades desbloqueables.  
-El jugador puede gastar puntos de mejora para activar nuevas habilidades, siempre que cumpla los requisitos necesarios.  
-El menú del árbol se abre desde el **Blueprint del personaje** al presionar la tecla **E**.
+- Sistema de interfaz de usuario para un **árbol de habilidades (Skill Tree)** en **Unreal Engine 5**, implementado en **C++** y **Blueprints**.  
+- El árbol está dividido en **tres bloques principales**: **Health**, **Skill** y **Strength**, cada uno con sus propias habilidades desbloqueables.  
+- El jugador puede gastar puntos de mejora para activar nuevas habilidades, siempre que cumpla los requisitos necesarios.  
+- El menú del árbol se abre desde el **Blueprint del personaje** al presionar la tecla **E**.
 
 ---
 
